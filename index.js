@@ -6,6 +6,7 @@ async function main() {
   const text = await (await tab.goto("https://myip.dk")).text();
   console.log(text);
   console.log("done");
+  browser.close();
 }
 
 main();
