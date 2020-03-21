@@ -6,11 +6,10 @@ async function main() {
     args: ["--no-sandbox"]
   });
   const tab = await browser.newPage();
-  const text = await (await tab.goto("https://myip.dk")).text();
+  const text = await (await tab.goto("http://example.com/")).text();
   console.log(text);
   console.log("done");
   browser.close();
 }
 
 main();
-//push lol
